@@ -1,0 +1,8 @@
+.bg {
+  &__white {
+    background-color: white;
+  }
+  &__white:hover {
+    background-color: lightgrey;
+  }
+}

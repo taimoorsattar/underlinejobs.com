@@ -1,0 +1,31 @@
+@import './mixin';
+
+.img {
+  display: block;
+
+  &__round {
+    border-radius: 50%;
+  }
+
+  &__300w {
+    max-width: 300px;
+    height: auto;
+  }
+
+  &__80w {
+    max-width: 80px;
+    height: auto;
+  }
+
+  &__margin-r {
+    margin-right: 20px;
+  }
+
+  &__float-r {
+    @include atMinMedium {
+      float: right;
+    }
+    margin: auto;
+    float: none;
+  }
+}

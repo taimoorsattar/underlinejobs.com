@@ -1,0 +1,196 @@
+@import './mixin';
+
+.headline {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+
+  word-spacing: 2.2px;
+  letter-spacing: 1.5px;
+
+  color: #000;
+
+  text-transform: capitalize;
+
+  @include atMinMedium {
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+  }
+
+  &__medium {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+  }
+
+  &--inblock {
+    display: inline-block;
+  }
+
+  &--block {
+    display: block;
+  }
+
+  &--logo {
+    display: inline-block;
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 400;
+
+    & a {
+      color: black;
+      text-decoration: none;
+    }
+  }
+
+  &__feature {
+    display: block;
+    font-size: 26px;
+
+    font-weight: 500;
+
+    letter-spacing: 3px;
+    word-spacing: 6px;
+
+    color: #000;
+
+    margin-bottom: 26px;
+  }
+
+  &__subtitle {
+    display: block;
+    font-weight: bold;
+    font-size: 28px;
+
+    line-height: 1.4;
+    word-spacing: 8px;
+
+    color: #006699;
+  }
+
+  &__sml {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+
+    line-height: 1.8;
+    color: black;
+  }
+
+  &__error-text {
+    display: block;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 1.5;
+
+    letter-spacing: 3px;
+    word-spacing: 6px;
+    color: #000;
+
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+
+    color: black;
+
+    @include atMinMedium {
+      font-size: 18px;
+      line-height: 1.6;
+      word-spacing: 1px;
+      letter-spacing: 1px;
+    }
+
+    h2 {
+      font-weight: 700;
+      font-size: 1.6rem;
+      line-height: 1.5;
+
+      letter-spacing: 1.5px;
+      word-spacing: 3px;
+
+      margin-top: 30px;
+      margin-bottom: 40px;
+    }
+
+    a {
+      cursor: pointer;
+      text-decoration: underline;
+      color: #2b00ff;
+    }
+  }
+
+  &__intro {
+    font-size: 1.1rem;
+  }
+
+  &--dull {
+    color: #575757;
+  }
+
+  strong {
+    font-weight: 400;
+  }
+
+  &--dark-blue {
+    color: #006699;
+  }
+
+  &--white {
+    color: white;
+  }
+
+  &--b {
+    font-weight: bold;
+  }
+
+  &--cap {
+    text-transform: capitalize;
+  }
+
+  &--b-margin-small {
+    margin-bottom: 0.5em;
+  }
+
+  &--dotted {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+  }
+
+  &--b-margin-medium {
+    margin-bottom: 1em;
+  }
+
+  &--b-margin-large {
+    margin-bottom: 1.5em;
+  }
+
+  &--r-margin-sml {
+    margin-right: 12px;
+  }
+
+  &--l-margin-large {
+    margin-left: 1.5em;
+  }
+
+  &--no-t-margin {
+    margin-top: 0;
+  }
+
+  &--mid {
+    text-align: center;
+  }
+
+  &--left {
+    text-align: left !important;
+  }
+
+  &--no-decor {
+    color: black;
+    text-decoration: none;
+  }
+}
