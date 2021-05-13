@@ -1,6 +1,6 @@
 {
   "name": "underline-jobs",
-  "version": 1,
+  "version": 2,
   "build": {
     "env": {
       "MONGODB_URI": "mongodb+srv://testuser:dontreusethis@cluster0-gc0a7.mongodb.net/nextjsmongodbapp?retryWrites=true&w=majority",
